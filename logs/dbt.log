@@ -1,0 +1,62 @@
+
+
+============================== 2023-03-06 03:55:55.782040 | 88f87abc-5b72-481d-8ba0-b26bdc399862 ==============================
+[0m03:55:55.782040 [info ] [MainThread]: Running with dbt=1.4.4
+[0m03:55:55.783877 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ec2-user/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:55:55.784158 [debug] [MainThread]: Tracking: tracking
+[0m03:55:55.791496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6c059a2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6c9129d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6c05ac310>]}
+[0m03:55:55.793064 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-06 04:01:10.802668 | f8cebdce-ca3a-4631-9bfb-6a7666b5b84f ==============================
+[0m04:01:10.802668 [info ] [MainThread]: Running with dbt=1.4.4
+[0m04:01:10.804639 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ec2-user/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m04:01:10.804980 [debug] [MainThread]: Tracking: tracking
+[0m04:01:10.812434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e96dad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e974390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e974f50>]}
+[0m04:01:10.814368 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.7/site-packages/dbt/include/starter_project
+[0m04:01:40.829781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e984350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e984650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f127e984210>]}
+[0m04:01:40.830418 [debug] [MainThread]: Flushing usage events
+[0m04:01:41.432681 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m04:01:41.434123 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/lib/python3.7/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/lib/python3.7/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/usr/local/lib/python3.7/site-packages/dbt/task/init.py", line 304, in run
+    adapter = self.ask_for_adapter_choice()
+  File "/usr/local/lib/python3.7/site-packages/dbt/task/init.py", line 231, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+IndexError: list index out of range
+
+
+
+============================== 2023-03-06 04:02:59.131514 | 4e458359-af70-4a7f-83b9-daf8fc89cf01 ==============================
+[0m04:02:59.131514 [info ] [MainThread]: Running with dbt=1.4.4
+[0m04:02:59.133318 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ec2-user/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m04:02:59.133625 [debug] [MainThread]: Tracking: tracking
+[0m04:02:59.141134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2d952d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2db6410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2db6910>]}
+[0m04:02:59.143134 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m04:02:59.143750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2db6410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2db6910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f2dc28d0>]}
+[0m04:02:59.144124 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-06 04:23:23.336207 | 70740cec-6d2b-493a-aa24-423977a23767 ==============================
+[0m04:23:23.336207 [info ] [MainThread]: Running with dbt=1.4.4
+[0m04:23:23.338004 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ec2-user/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m04:23:23.338271 [debug] [MainThread]: Tracking: tracking
+[0m04:23:23.345246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3667d01510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3667d34dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3667d34d50>]}
+[0m04:23:23.764675 [debug] [MainThread]: Executing "git --help"
+[0m04:23:23.770514 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:23:23.771181 [debug] [MainThread]: STDERR: "b''"
+[0m04:23:23.777854 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m04:23:23.779285 [debug] [MainThread]: Using snowflake connection "debug"
+[0m04:23:23.779628 [debug] [MainThread]: On debug: select 1 as id
+[0m04:23:23.779960 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:23:24.523535 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m04:23:24.525339 [debug] [MainThread]: On debug: Close
+[0m04:23:24.625414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3663c3f190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3663c3ff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3663c3f450>]}
+[0m04:23:24.626262 [debug] [MainThread]: Flushing usage events
+[0m04:23:25.243752 [debug] [MainThread]: Connection 'debug' was properly closed.
